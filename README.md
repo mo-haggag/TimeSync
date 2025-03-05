@@ -23,7 +23,7 @@
 
 ## Live Demo
 
-Try it now: [TimeSync Demo](https://trytimesync.vercel.app/))
+Try it now: [TimeSync Demo](https://trytimesync.vercel.app/)
 
 ## Installation
 
