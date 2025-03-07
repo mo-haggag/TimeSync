@@ -91,7 +91,8 @@ document.addEventListener('DOMContentLoaded', () => {
         timezones.forEach(tz => {
             const option = document.createElement('option');
             option.value = tz.id;
-            option.textContent = tz.label;
+            // Add TZ identifier next to GMT offset
+            option.textContent = `${tz.label} (${tz.id})`;
             
             // If this is the local timezone or close to it, select it by default
             if (tz.id === localTimezoneName || 
@@ -113,7 +114,8 @@ document.addEventListener('DOMContentLoaded', () => {
         timezones.forEach(tz => {
             const option = document.createElement('option');
             option.value = tz.id;
-            option.textContent = tz.label;
+            // Add TZ identifier next to GMT offset
+            option.textContent = `${tz.label} (${tz.id})`;
             addFragment.appendChild(option);
         });
         
@@ -190,7 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Timezone label display
             const nameSpan = document.createElement('span');
             nameSpan.className = 'timezone-name';
-            nameSpan.textContent = timezone.label;
+            nameSpan.innerHTML = `<span class="timezone-offset">${timezone.label}</span> <span class="timezone-id">(${timezone.id})</span>`;
             
             // Create a button wrapper for better touch target
             const btnWrapper = document.createElement('div');

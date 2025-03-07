@@ -405,8 +405,8 @@ select {
 }
 
 .timezone-info {
-    width: 130px;
-    min-width: 130px;
+    width: 160px;
+    min-width: 160px;
     padding: 0.8rem;
     background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
     color: white;
@@ -440,6 +440,19 @@ select {
     flex: 1;
     text-align: left;
     padding-right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.timezone-offset {
+    font-weight: 600;
+}
+
+.timezone-id {
+    font-size: 0.7rem;
+    opacity: 0.85;
+    font-weight: normal;
+    margin-top: 2px;
 }
 
 .timezone-hours {
@@ -641,8 +654,8 @@ select {
     }
     
     .timezone-info {
-        width: 120px;
-        min-width: 120px;
+        width: 150px;
+        min-width: 150px;
     }
     
     .hour-block {
@@ -819,7 +832,12 @@ select {
     }
     
     .timezone-name {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        padding: 0.3rem 0;
+    }
+    
+    .timezone-id {
+        font-size: 0.65rem;
     }
     
     /* Add visual indicator for scrollable area */
@@ -878,6 +896,19 @@ select {
     input, select {
         font-size: 0.8rem;
         height: 45px;
+    }
+    
+    .timezone-info {
+        padding: 0.6rem;
+    }
+    
+    .timezone-name {
+        font-size: 0.8rem;
+    }
+    
+    .timezone-id {
+        font-size: 0.6rem;
+        margin-top: 1px;
     }
 }
 
